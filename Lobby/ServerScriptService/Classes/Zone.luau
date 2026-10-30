@@ -49,6 +49,7 @@ end
 
 
 function Zone:TeleportPlayers()
+	
 	local playersToTeleport = {}
 	for _, userId: number in pairs(self._Players) do
 		local player = Players:GetPlayerByUserId(userId)
@@ -79,6 +80,7 @@ function Zone:TeleportPlayers()
 	end)
 	
 	return success, err
+	
 end
 
 
